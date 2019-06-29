@@ -1,13 +1,14 @@
 import React, { Component } from "react";
-import app from "../authentication/base";
+import Button from "../components/button/button";
+import PageWrapper from "../components/pageWrapper/pageWrapper";
 
 class Home extends Component {
 	render() {
 		return (
-			<div>
+			<PageWrapper>
 				<h2>Welcome Home</h2>
-				<button onClick={() => app.auth().signOut()}>Sign Out</button>
-			</div>
+				<Button signOut>Sign Out</Button>
+			</PageWrapper>
 		);
 	}
 }

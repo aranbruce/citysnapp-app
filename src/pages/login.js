@@ -1,8 +1,13 @@
 import React, { useCallback, useContext } from "react";
+import { Link } from "react-router-dom";
 import { withRouter, Redirect } from "react-router";
 import app from "../authentication/base.js";
 import { AuthContext } from "../authentication/auth.js";
 import Button from "../components/button/button";
+import AuthenticationWrapper from "../components/authenticationWrapper/authenticationWrapper.js";
+import styles from "../components/form/form.module.sass";
+
+import logo from "../images/citySnappLogo.svg";
 
 const Login = ({ history }) => {
 	const handleLogin = useCallback(
@@ -28,25 +33,30 @@ const Login = ({ history }) => {
 	}
 
 	return (
-		<div>
-			<h1>Log in</h1>
-			<form onSubmit={handleLogin}>
-				<label>
-					Email
-					<input name="email" type="email" placeholder="Email" />
-				</label>
-				<label>
-					Password
-					<input
-						name="password"
-						type="password"
-						placeholder="Password"
-					/>
-				</label>
-				<button type="submit">Login</button>
+		<AuthenticationWrapper>
+			<img src={logo} alt="CitySnapp Logo" className={"logoImage"} />
+			<h1>Login</h1>
+			<form onSubmit={handleLogin} className={styles.form}>
+				<input
+					name="email"
+					type="email"
+					placeholder="Email"
+					aria-label="Email"
+					className={styles.input}
+				/>
+				<input
+					name="password"
+					type="password"
+					placeholder="Password"
+					aria-label="Password"
+					className={styles.input}
+				/>
+				<Button form type="submit">
+					Login
+				</Button>
 			</form>
-			<Button to={"/sign-up"}>Sign Up</Button>
-		</div>
+			<Link to="/sign-up">Sign Up</Link>
+		</AuthenticationWrapper>
 	);
 };
 

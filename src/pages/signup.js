@@ -1,7 +1,12 @@
 import React, { useCallback } from "react";
 import { withRouter } from "react-router";
+import { Link } from "react-router-dom";
 import app from "../authentication/base";
 import Button from "../components/button/button";
+import AuthenticationWrapper from "../components/authenticationWrapper/authenticationWrapper";
+import styles from "../components/form/form.module.sass";
+
+import logo from "../images/citySnappLogo.svg";
 
 const SignUp = ({ history }) => {
 	const handleSignUp = useCallback(
@@ -24,25 +29,35 @@ const SignUp = ({ history }) => {
 	);
 
 	return (
-		<div>
-			<h1>Sign up</h1>
-			<form onSubmit={handleSignUp}>
-				<label>
-					Email
-					<input name="email" type="email" placeholder="Email" />
-				</label>
-				<label>
-					Password
-					<input
-						name="password"
-						type="password"
-						placeholder="Password"
-					/>
-				</label>
-				<button type="submit">Sign Up</button>
+		<AuthenticationWrapper>
+			<img src={logo} alt="CitySnapp Logo" className={"logoImage"} />
+
+			<h1>Create an Account</h1>
+			<form onSubmit={handleSignUp} className={styles.form}>
+				<input
+					name="email"
+					type="email"
+					placeholder="Email"
+					aria-label="Email"
+					className={styles.input}
+					required
+				/>
+				<input
+					name="password"
+					type="password"
+					placeholder="Password"
+					aria-label="Password"
+					className={styles.input}
+					minLength={6}
+					maxLength={100}
+					required
+				/>
+				<Button form type="submit">
+					Sign Up
+				</Button>
 			</form>
-			<Button to={"/login"}>Login</Button>
-		</div>
+			<Link to={"/login"}>Login</Link>
+		</AuthenticationWrapper>
 	);
 };
 

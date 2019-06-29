@@ -1,0 +1,21 @@
+.button
+    height: 3.125rem
+    border: none
+    border-radius: 1.5625rem
+    font-size: 1.125rem
+    font-weight: 600
+    padding-left: 2rem
+    padding-right: 2rem 
+    color: white
+    background-image: linear-gradient(45deg, #FE9A8B 0%, #FD868C 37%, #F9748F 77%, #F78CA0 100%)
+    cursor: pointer
+    min-width: 8rem
+    transition: all 3s ease-in-out
+    &:hover
+        background-image: linear-gradient(45deg, #F78CA0 0%, #F9748F 37%, #FD868C 77%, #FE9A8B 100%)
+        transition: background-image .3s ease-in-out
+
+
+.buttonForm
+    @extend .button
+    margin-top: 2rem
