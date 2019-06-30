@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Search/Default</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FE9A8B" offset="0%"></stop>
+            <stop stop-color="#FD868C" offset="37.0475925%"></stop>
+            <stop stop-color="#F9748F" offset="77.5550064%"></stop>
+            <stop stop-color="#F78CA0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Search/Default" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Line" fill="url(#linearGradient-1)" cx="20" cy="20" r="20"></circle>
+        <path d="M23.7243313,24.1842307 L23.3833322,23.8185538 L24.1146859,23.1365555 L24.4556851,23.5022323 L29.2296736,28.6217082 L29.5706728,28.9873851 L28.839319,29.6693834 L28.4983199,29.3037066 L23.7243313,24.1842307 Z M19.5,25 C15.9101491,25 13,22.0898509 13,18.5 C13,14.9101491 15.9101491,12 19.5,12 C23.0898509,12 26,14.9101491 26,18.5 C26,22.0898509 23.0898509,25 19.5,25 Z" id="Combined-Shape" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+    </g>
+</svg>
