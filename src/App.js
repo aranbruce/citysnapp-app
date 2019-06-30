@@ -11,12 +11,6 @@ import { AuthProvider } from "./authentication/auth";
 import PrivateRoute from "./routing/privateRoute";
 
 class App extends Component {
-	constructor() {
-		super();
-		this.state = {
-			authenticated: false
-		};
-	}
 	render() {
 		return (
 			<AuthProvider>
