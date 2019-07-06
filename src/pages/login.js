@@ -8,7 +8,7 @@ import styles from "../components/form/form.module.sass";
 import logo from "../images/citySnappLogo.svg";
 import AuthenticationWrapper from "../components/authenticationWrapper/authenticationWrapper";
 
-class SignUp extends Component {
+class Login extends Component {
 	handleLogin = async event => {
 		event.preventDefault();
 		const { email, password } = event.target.elements;
@@ -55,4 +55,4 @@ class SignUp extends Component {
 	}
 }
 
-export default withRouter(SignUp);
+export default withRouter(Login);
