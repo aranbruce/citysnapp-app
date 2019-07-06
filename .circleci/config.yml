@@ -34,9 +34,9 @@ jobs:
         steps:
             - attach_workspace:
                   at: ~/repo
-            - run:
-                  name: install firebase
-                  command: npm install --save-dev firebase-tools
+            # - run:
+            #       name: install firebase
+            #       command: npm install --save-dev firebase-tools
             - run:
                   name: deploy
                   command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN
