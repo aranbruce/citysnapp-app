@@ -44,7 +44,7 @@ class App extends Component {
 			<Router>
 				<PrivateRoute
 					exact
-					path="/"
+					path="/discover"
 					component={Discover}
 					authenticated={authenticated}
 				/>

@@ -16,7 +16,7 @@ class Login extends Component {
 			await app
 				.auth()
 				.signInWithEmailAndPassword(email.value, password.value);
-			this.props.history.push("/");
+			this.props.history.push("/discover");
 		} catch (error) {
 			alert(error);
 		}

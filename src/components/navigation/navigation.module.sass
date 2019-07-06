@@ -17,4 +17,27 @@
     justify-content: space-between
     align-items: center
     margin-bottom: 2rem
+    
+.icon
+    fill: #9B9B9B
+    color: #9B9B9B
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    max-width: 4rem
+    font-size: 0.75rem
+    /* iphone X */
+    @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: "3")
+        padding-bottom: 1rem
+    @media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 2)
+        padding-bottom: 1rem
+    /* iphone XS */
+    @media only screen and (min-device-width : 375px) and (max-device-height : 812px) and (-webkit-device-pixel-ratio : 3)
+        padding-bottom: 1rem
+    /* iphone XS Max */
+    @media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 3)
+        padding-bottom: 1rem
 
+.active
+    fill: #F78CA0
+    color: #F78CA0

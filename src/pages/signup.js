@@ -16,7 +16,7 @@ class SignUp extends Component {
 			await app
 				.auth()
 				.createUserWithEmailAndPassword(email.value, password.value);
-			this.props.history.push("/");
+			this.props.history.push("/discover");
 		} catch (error) {
 			alert(error);
 		}
