@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.sass";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import app from "./authentication/base.js";
 import SignUp from "./pages/signup";
 import Login from "./pages/login";
@@ -42,6 +42,17 @@ class App extends Component {
 		}
 		return (
 			<Router>
+				<Route
+					exact
+					path="/"
+					render={() =>
+						authenticated ? (
+							<Redirect to="/discover" />
+						) : (
+							<Redirect to="login" />
+						)
+					}
+				/>
 				<PrivateRoute
 					exact
 					path="/discover"
