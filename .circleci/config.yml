@@ -19,36 +19,39 @@ jobs:
             - run:
                   name: Build
                   command: npm run build
+            - run:
+                  name: Firebase Deploy
+                  command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"
             - save_cache:
                   paths:
                       - node_modules
                   key: v1-dependencies-{{ checksum "package.json" }}
-            - persist_to_workspace:
-                  root: ~/repo
-                  paths:
-                      - .
-    Deploy to Firebase:
-        docker:
-            - image: circleci/node:lts
-        working_directory: ~/repo
-        steps:
-            - attach_workspace:
-                  at: ~/repo
-            - run:
-                  name: install firebase
-                  command: npm install --save-dev firebase-tools
-            - run:
-                  name: deploy
-                  command: npm run firebase deploy
+            # - persist_to_workspace:
+            #       root: ~/repo
+            #       paths:
+            #           - .
+    # Deploy to Firebase:
+    #     docker:
+    #         - image: circleci/node:lts
+    #     working_directory: ~/repo
+    #     steps:
+    #         - attach_workspace:
+    #               at: ~/repo
+    #         - run:
+    #               name: install firebase
+    #               command: npm install --save-dev firebase-tools
+    #         - run:
+    #               name: deploy
+    #               command: npm run firebase deploy
 
 workflows:
     Build and Deploy:
         jobs:
             - Build
-            - Deploy to Firebase:
-                  requires:
-                      - Build
-                  filters:
-                      branches:
-                          only:
-                              - master
+            # - Deploy to Firebase:
+            #       requires:
+            #           - Build
+            #       filters:
+            #           branches:
+            #               only:
+            #                   - master
