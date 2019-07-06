@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import Profile from "./oval.png";
 import SearchDefault from "./searchDefault.svg";
-import DownArrow from "./downArrow.svg";
+import { ReactComponent as DownArrow } from "./downArrow.svg";
 
 import styles from "./header.module.sass";
 
@@ -17,7 +17,7 @@ const Header = () => {
 				<div className={styles.smallText}>You are in</div>
 				<Link to={"/"} className={styles.location}>
 					<div>London</div>
-					<img src={DownArrow} alt="Down Arrow" />
+					<DownArrow />
 				</Link>
 			</div>
 			<div className={styles.search}>

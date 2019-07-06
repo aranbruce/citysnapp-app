@@ -5,10 +5,6 @@ import { ReactComponent as Discover } from "./discover.svg";
 import { ReactComponent as Plan } from "./plan.svg";
 import { ReactComponent as Friends } from "./friends.svg";
 import { ReactComponent as Profile } from "./profile.svg";
-// import Discover from "./discover.svg";
-// import Plan from "./plan.svg";
-// import Friends from "./friends.svg";
-// import Profile from "./profile.svg";
 
 import styles from "./navigation.module.sass";
 
