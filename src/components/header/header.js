@@ -10,18 +10,20 @@ import styles from "./header.module.sass";
 const Header = () => {
 	return (
 		<header className={styles.header}>
-			<div className={styles.profile}>
-				<img src={Profile} alt="Profile" />
-			</div>
-			<div className={styles.locationWrapper}>
-				<div className={styles.smallText}>You are in</div>
-				<Link to={"/"} className={styles.location}>
-					<div>London</div>
-					<DownArrow />
-				</Link>
-			</div>
-			<div className={styles.search}>
-				<img src={SearchDefault} alt="Search" />
+			<div className={styles.headerContent}>
+				<div className={styles.profile}>
+					<img src={Profile} alt="Profile" />
+				</div>
+				<div className={styles.locationWrapper}>
+					<div className={styles.smallText}>You are in</div>
+					<Link to={"/"} className={styles.location}>
+						<div>London</div>
+						<DownArrow />
+					</Link>
+				</div>
+				<div className={styles.search}>
+					<img src={SearchDefault} alt="Search" />
+				</div>
 			</div>
 		</header>
 	);
