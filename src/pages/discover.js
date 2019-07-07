@@ -2,8 +2,11 @@ import React, { Component } from "react";
 import PageWrapper from "../components/pageWrapper/pageWrapper";
 import Categories from "../components/categories/categories";
 import Activity from "../components/activity/activity";
-import Food from "../images/food.jpg";
+import Brunch from "../images/brunch.jpg";
+import Bars from "../images/bars.jpg";
+import Restaurants from "../images/restaurants.jpg";
 import Coffee from "../images/coffee.jpg";
+import Culture from "../images/culture.jpg";
 import Outdoors from "../images/outdoors.jpg";
 import Indoors from "../images/indoors.jpg";
 import Nightlife from "../images/nightlife.jpg";
@@ -19,12 +22,24 @@ class Discover extends Component {
 				<Categories
 					categories={[
 						{
-							title: "Food",
-							image: Food
+							title: "Brunch",
+							image: Brunch
+						},
+						{
+							title: "Bars",
+							image: Bars
+						},
+						{
+							title: "Restuarants",
+							image: Restaurants
 						},
 						{
 							title: "Coffee",
 							image: Coffee
+						},
+						{
+							title: "Culture",
+							image: Culture
 						},
 						{
 							title: "Outdoors",
