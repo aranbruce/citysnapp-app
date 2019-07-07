@@ -4,7 +4,7 @@ import Categories from "../components/categories/categories";
 import Activity from "../components/activity/activity";
 import Brunch from "../images/brunch.jpg";
 import Bars from "../images/bars.jpg";
-import Restaurants from "../images/restaurants.jpg";
+import Dinner from "../images/dinner.jpg";
 import Coffee from "../images/coffee.jpg";
 import Culture from "../images/culture.jpg";
 import Outdoors from "../images/outdoors.jpg";
@@ -20,6 +20,7 @@ class Discover extends Component {
 			<PageWrapper>
 				<h3>Categories</h3>
 				<Categories
+					selected="Brunch"
 					categories={[
 						{
 							title: "Brunch",
@@ -30,8 +31,8 @@ class Discover extends Component {
 							image: Bars
 						},
 						{
-							title: "Restuarants",
-							image: Restaurants
+							title: "Dinner",
+							image: Dinner
 						},
 						{
 							title: "Coffee",

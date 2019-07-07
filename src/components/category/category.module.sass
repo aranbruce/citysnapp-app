@@ -17,7 +17,19 @@
     background-size: cover
     background-position: 50% 50%
     margin-bottom: 1rem
+    transition: all 0.3s ease-in-out
+
+.imgSelected
+    @extend .img
+    box-shadow: 0 5px 10px 0 rgba(253,134,140,0.50)
+    transition: all 0.3s ease-in-out
 
 .title
     margin: 0 auto
     font-weight: 500
+    transition: all 0.3s ease-in-out
+
+.titleSelected
+    @extend .title
+    color: #F78CA0
+    transition: all 0.3s ease-in-out
