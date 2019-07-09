@@ -71,9 +71,15 @@ class BrunchPlaces extends Component {
 							status === google.maps.places.PlacesServiceStatus.OK
 						) {
 							console.log(place);
-							container.innerHTML += `Name: ${
-								place.name
-							} Rating: ${place.rating}`;
+							container.innerHTML +=
+								"Name:" +
+								" " +
+								place.name +
+								" " +
+								"Rating:" +
+								" " +
+								place.rating +
+								" ";
 						}
 					}
 				}
@@ -85,7 +91,9 @@ class BrunchPlaces extends Component {
 		return (
 			<div>
 				<Script
-					url="https://maps.googleapis.com/maps/api/js?key=AIzaSyChvXY1NJQ5EZG_rzJCRgQerVoFftEDZac&libraries=places"
+					url={`https://maps.googleapis.com/maps/api/js?key=${
+						process.env.REACT_APP_GOOGLE_PLACES_API_KEY
+					}&libraries=places`}
 					onLoad={this.handleScriptLoad}
 				/>
 				<div id="results" />
