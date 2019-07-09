@@ -12,29 +12,21 @@ import Outdoors from "../images/outdoors.jpg";
 import Indoors from "../images/indoors.jpg";
 import Nightlife from "../images/nightlife.jpg";
 
-import Brunch1 from "../images/brunch1.jpg";
-import Brunch2 from "../images/brunch2.jpg";
-import Brunch3 from "../images/brunch3.jpg";
-
-import Bar1 from "../images/bar1.jpg";
-import Bar2 from "../images/bar2.jpg";
-import Bar3 from "../images/bar3.jpg";
-
 const brunchActivities = [
 	{
 		title: "Drake & Morgan",
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		image: Brunch1
+		image: "Foo"
 	},
 	{
 		title: "Granger & Co.",
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		image: Brunch2
+		image: "Foo"
 	},
 	{
 		title: "Plum Split Milk",
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		image: Brunch3
+		image: "Foo"
 	}
 ];
 
@@ -42,17 +34,17 @@ const barActivities = [
 	{
 		title: "London Cocktail Club",
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		image: Bar1
+		image: "Foo"
 	},
 	{
 		title: "Simmons Bar",
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		image: Bar2
+		image: "Foo"
 	},
 	{
 		title: "The Racketeer",
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		image: Bar3
+		image: "Foo"
 	}
 ];
 
